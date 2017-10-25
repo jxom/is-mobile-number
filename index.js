@@ -6,11 +6,11 @@ const phoneUtil = googleLibPhoneNumber.PhoneNumberUtil.getInstance();
 const phoneType = googleLibPhoneNumber.PhoneNumberType;
 
 module.exports = (phoneNumber, countryCode) => {
-  if (!phoneNumber) {
-    throw new Error('`phoneNumber` not given.');
-  }
   if (!countryCode) {
     throw new Error('`countryCode` not given.');
+  }
+  if (!phoneNumber) {
+    return false;
   }
   try {
     const parsedPhoneNumber = phoneUtil.parse(phoneNumber, countryCode);
