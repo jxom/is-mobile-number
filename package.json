@@ -1,6 +1,6 @@
 {
   "name": "is-mobile-number",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "My top-notch module",
   "license": "MIT",
   "repository": "jxom/is-mobile-number",
@@ -26,8 +26,11 @@
     "xo": "^0.17.0"
   },
   "xo": {
-    "rules" : {
-      "indent": [2, 2]
+    "rules": {
+      "indent": [
+        2,
+        2
+      ]
     }
   }
 }
