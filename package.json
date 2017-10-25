@@ -1,0 +1,33 @@
+{
+  "name": "is-mobile-number",
+  "version": "1.0.0",
+  "description": "My top-notch module",
+  "license": "MIT",
+  "repository": "jxom/is-mobile-number",
+  "author": {
+    "name": "jxom",
+    "email": "jakemoxey@gmail.com",
+    "url": "jxom.io"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "google-libphonenumber": "^3.0.7"
+  },
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "xo": "^0.17.0"
+  },
+  "xo": {
+    "rules" : {
+      "indent": [2, 2]
+    }
+  }
+}
