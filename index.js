@@ -16,7 +16,6 @@ module.exports = (phoneNumber, countryCode) => {
     const parsedPhoneNumber = phoneUtil.parse(phoneNumber, countryCode);
     return phoneUtil.getNumberType(parsedPhoneNumber) === phoneType.MOBILE;
   } catch (err) {
-    console.error(err);
     return false;
   }
 };
